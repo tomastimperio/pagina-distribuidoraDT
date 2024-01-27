@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image:radial-gradient(rgb(184, 184, 184),rgb(109, 109, 109)) ;
+}
+.logodistribuidora{
+    height: 100px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+}
+
+.h2_{
+    color: rgb(23, 23, 63);
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+.lista a img{
+    height: 35px;
+    border-radius: 20px;
+    padding: 2px;
+    margin-right: 5px;
+}
+.lista a img:hover{
+    background-color: rgb(23, 23, 63);
+}
+
+.ordenamiento{
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: center;
+    color:  #333;
+}
+u{
+  color: rgb(23, 23, 63);
+}
+a h2{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #444444; ;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.ARTICULOS1 , .ARTICULOS2 , .ARTICULOS3 , .ARTICULOS4 , .ARTICULOS5 , .ARTICULOS6 , .ARTICULOS7 , .ARTICULOS8 , .ARTICULOS9 , .ARTICULOS10 , .ARTICULOS11 , .ARTICULOS12 , .ARTICULOS13 , .ARTICULOS14 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    margin: 15px 50px;
+}
+main section article a img{
+    max-width: 150px;
+    height: auto;
+    align-items: center;
+    padding-left: 50px;
+}
+.art_1 {
+    margin: 5px auto ;
+    max-width: 250px;
+    height: auto;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+}
+article:hover{
+    background-color: rgb(232, 232, 232) ;
+}
+a button{
+    color: rgb(23, 23, 63);
+    padding-left: 39px;
+    border: none;
+    background-color: transparent;
+    border-radius:15px;
+}
+a button:hover{
+   text-decoration:underline;
+}
+hr{ 
+ height:2px ;
+ width: 80%;
+ border: none;
+ margin: auto;
+ background-color:rgb(202, 202, 202) ;
+ border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+
+/* Estilos para la sección de enlaces */
+.enlaces ul {
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.enlaces li {
+    display: inline;
+    margin-right: 15px;
+}
+.enlaces li:hover {
+text-decoration: underline;
+}
+.enlaces a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-sociales a {
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 35px; 
+    height: 35px;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+div a img{
+    height: 35px;
+    border-radius: 20px;
+    padding: 2px;
+}
+div a img:hover{
+    background-color: rgb(23, 23, 63) ;
+}
+footer hr{
+    height:2px ;
+    width: 30%;
+    margin: auto;
+    background-color:rgb(202, 202, 202) ;
+}
+
+    @media only screen and (max-width: 480px) {
+        body {
+          font-size: 100%; 
+        }
+        .art_1{
+          width: 100%;
+          height: auto;
+        }
+            .lista {
+                flex-direction: column;
+                align-items: center;
+            }
+            .lista a img {
+                margin-bottom: 10px;
+            }
+            main section article a img{
+                max-width: 100px;
+            }
+    }
+    
+/* BUSQUEDA DE ARTICULOS */
+#busqueda {
+    text-align: center;
+    margin-top: auto auto;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Ajustar el ancho máximo según tus preferencias */
+    height: 20px;
+    margin: 0 auto; /* Centrar el formulario */
+    margin-top: 20px;
+}
+
+/* Estilo para los campos de entrada del formulario */
+form input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-size: 1em; /* Tamaño de letra */
+    margin-right: 10px;
+}
+
+/* Estilo para el botón de envío del formulario */
+form button {
+    width: 80px;
+    height: 24px;
+    background-color: #666;
+    color: #fff;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de letra */
+}
+
+/* Estilo para el botón de envío al pasar el mouse */
+form button:hover {
+    background-color: #555;
+}
+#resultados article img{
+    height: 100px;
+    width: 100px;
+}
+#resultados article {
+    font-size: smaller;
+    margin: 20px;
+    background-color:rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 10px;
+    transition: filter 0.3s ease; /* Agrega una transición suave al cambio de filtro */
+}
+#resultados {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los resultados se envuelvan en filas si no hay suficiente espacio */
+    justify-content: space-around; /* Distribuye los resultados uniformemente a lo largo del contenedor */
+}
+
+
+/* Al pasar el ratón sobre los resultados, revierte la escala de grises */
+#resultados article:hover img {
+    filter: grayscale(0%);
+}
